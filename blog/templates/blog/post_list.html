@@ -1,3 +1,12 @@
 <html>
-<p>Dan</p>
+<ol>
+{% for post in posts %}
+  <li>
+    <p>published: {{post.published_date}}</p>
+    <h1><a href="">{{post.title}}</a></h1>
+    <p>{{post.text|linebreaksbr}}</p>
+  </li>
+{% endfor %}
+</ol>
+  <p>Dan</p>
 </html>
